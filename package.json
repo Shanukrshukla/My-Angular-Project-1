@@ -1,26 +1,4 @@
 {
-<<<<<<< HEAD
-  "name": "fullstack-projects",
-  "version": "1.0.0",
-  "description": "full stack project with crud operation",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "nodemon server.js"
-  },
-  "author": "shanu shukla",
-  "license": "ISC",
-  "dependencies": {
-    "@angular/common": "^19.1.6",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "morgan": "^1.10.0",
-    "mysql": "^2.18.1",
-    "nodemon": "^3.1.9"
-  }
-}
-=======
   "name": "user-management",
   "version": "0.0.0",
   "scripts": {
@@ -64,4 +42,3 @@
     "typescript": "~5.7.2"
   }
 }
->>>>>>> user-management/main
