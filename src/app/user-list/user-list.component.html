@@ -1,0 +1,26 @@
+<div class="container">
+    <h2>User List</h2>
+    <button class="add-user-button" (click)="navigateToAdd()">Add User</button>
+    <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+    <table class="user-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Age</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.name }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.age }}</td>
+          <td>
+            <button (click)="editUser(user.id)">✏️</button>
+            <button (click)="deleteUser(user.id)">❌</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
