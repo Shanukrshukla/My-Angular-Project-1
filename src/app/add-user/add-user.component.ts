@@ -31,7 +31,7 @@ export class AddUserComponent implements OnInit {
       if (params['id']) {
         this.isEditMode = true;
         this.userId = +params['id'];
-        this.userService.getUser(this.userId).subscribe(user => {
+        this.userService.getUserById(this.userId).subscribe(user => {
           this.userForm.patchValue(user);
         });
       }

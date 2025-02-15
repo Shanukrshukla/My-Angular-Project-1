@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
   }
 
   loadUsers() {
-    this.userService.getUsers().subscribe((data: any[]) => this.users = data);
+    this.userService.getAllUsers().subscribe((data: any[]) => this.users = data);
   }
 
   editUser(id: number) {

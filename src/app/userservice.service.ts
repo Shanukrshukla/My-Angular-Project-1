@@ -8,15 +8,15 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class UserService {
-  private apiUrl = environment.apiUrl || 'http://localhost:3000';
+  private apiUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) {}
 
-  getUsers(): Observable<any[]> {
+  getAllUsers(): Observable<any[]> {
     return this.http.get<any[]>(`${this.apiUrl}/users`);
   }
 
-  getUser(id: number): Observable<any> {
+  getUserById(id: number): Observable<any> {
     return this.http.get<any>(`${this.apiUrl}/users/${id}`);
   }
 
